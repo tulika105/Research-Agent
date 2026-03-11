@@ -1,6 +1,6 @@
-# 🔍 Research Synthesizer Agent
+# 🔍 Research Agent
 
-A ReAct (Reasoning + Acting) agent that autonomously searches the web and synthesizes findings into a structured research report — all from the CLI.
+A ReAct (Reasoning + Action) agent that autonomously searches the web and synthesizes findings into a structured research report — all from the CLI.
 
 You type a topic. The agent thinks, searches, observes, and repeats — streaming each search query live to the terminal as it reasons. Once done, it hands off to a second LLM that formats everything into a clean report.
 
@@ -15,7 +15,7 @@ Enter a research topic: LangChain
 (ReAct agent is thinking... watch the steps below)
 
 🔎 Search 1: LangChain overview
-🔎 Search 2: LangChain recent developments 2024
+🔎 Search 2: LangChain recent developments 2026
 🔎 Search 3: LangChain technical architecture how it works
 🔎 Search 4: LangChain real world applications use cases
 🔎 Search 5: LangChain limitations and challenges
@@ -86,16 +86,16 @@ research-agent/
 ├── main.py       # CLI entry point + streaming loop
 ├── agent.py      # ReAct agent (LangGraph + Groq)
 ├── tools.py      # DuckDuckGo search tool (@tool decorator)
-├── report.py     # Report formatter (Groq SDK directly)
+├── report.py     # Report formatter 
 ├── examples/     # Sample reports saved here in txt
-├── requirements.txt
+├── requirements.txt  # Python dependencies
 ```
 
 ### Two-Model Design
 
 | Component | Model | Role |
 |---|---|---|
-| `agent.py` | `llama-3.3-70b-versatile` | Reasoning — decides what to search, detects gaps |
+| `agent.py` | `gpt-oss-20b` | Reasoning — decides what to search, detects gaps |
 | `report.py` | `llama-3.3-70b-versatile` | Writing — formats raw research into structured report |
 
 The agent gathers first, the formatter writes second. Separating these two jobs produces significantly better reports than combining them in a single prompt.
@@ -129,7 +129,7 @@ Every report follows the same 6-section format:
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/research-report-agent
+git clone https://github.com/tulika105/Research-Agent
 cd research-report-agent
 
 # 2. Create virtual environment
@@ -140,5 +140,4 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # 4. Add your Groq API key in .env
-
----
+```
