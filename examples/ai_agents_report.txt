@@ -1,0 +1,46 @@
+
+============================================================
+  RESEARCH REPORT
+  Topic  : AI Agents
+  Generated: 2026-03-11 19:54
+============================================================
+
+## **Overview**
+AI agents are autonomous or semi-autonomous software entities that utilize large language models (LLMs) or other AI components to perceive inputs, reason, plan, and act in a given environment. They can be task-specific or general-purpose, with core capabilities including perception, memory, planning, action, and learning. AI agents have various applications across industries, including customer support, enterprise automation, and healthcare.
+
+## **Key Findings**
+* AI agents can be task-specific (e.g., customer-service bots) or general-purpose (e.g., "copilots" that interact with multiple tools).
+* Core capabilities of AI agents include perception, memory, planning, action, and learning.
+* Recent developments include OpenAI's Promptfoo acquisition, LangChain's State of AI Agents 2024 report, and Forrester's "State of AI Agents" report.
+* AI agents have various applications, including enterprise copilots, customer support, HR and recruiting, finance, healthcare, logistics and supply chain, and software development.
+* Limitations and challenges of AI agents include safety and misalignment, data privacy, explainability, resource intensity, regulatory and ethical concerns, and operational complexity.
+
+## **Background & Context**
+AI agents have been developed to automate various tasks and processes, leveraging large language models (LLMs) and other AI components. The concept of AI agents has been around for several years, but recent advancements in LLMs have enabled the development of more sophisticated and capable agents. The use of AI agents has become increasingly widespread, with applications across various industries, including customer support, enterprise automation, and healthcare.
+
+The development of AI agents is driven by the need for automation and efficiency in various industries. As AI technology continues to evolve, we can expect to see more advanced and capable AI agents being developed. However, there are also concerns around the safety and ethics of AI agents, which need to be addressed through proper design, testing, and regulation.
+
+## **Current Developments**
+Recent developments in the field of AI agents include OpenAI's acquisition of Promptfoo, which aims to secure LLM-based agents against adversarial prompts. The LangChain State of AI Agents 2024 report highlights the widespread adoption of AI agents in enterprise settings, with 70% of surveyed enterprises using agents for employee support. Forrester's "State of AI Agents" report notes the rapid growth of the AI agent market, despite confusion around terminology.
+
+## **Key Players / Sources**
+Notable sources and organizations mentioned in the research include:
+* OpenAI
+* LangChain
+* Forrester
+* Anthropic
+* StrandsAgents
+* AIPlanet
+* TechCrunch
+* LinkedIn
+* Medium
+* Oracle
+* TechTarget
+* Aimultiple
+* UnderstandingAI
+* SaaStr
+* AI Plain English
+
+## **Summary**
+In summary, AI agents are autonomous or semi-autonomous software entities that utilize LLMs or other AI components to perceive inputs, reason, plan, and act in a given environment. Recent developments and advancements in AI agents have enabled their widespread adoption across various industries, including customer support, enterprise automation, and healthcare. However, there are also concerns around the safety and ethics of AI agents, which need to be addressed through proper design, testing, and regulation.
+============================================================
