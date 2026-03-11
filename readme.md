@@ -140,6 +140,7 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # 4. Add your Groq API key in .env
+
 # 5. Run the File
 python main.py
 ```
