@@ -1,6 +1,7 @@
 # 🔍 Research Agent
 
-A ReAct (Reasoning + Action) agent that autonomously searches the web and synthesizes findings into a structured research report — all from the CLI.
+A ReAct (Reasoning + Acting) agent that takes a research topic as input, runs iterative DuckDuckGo searches through Think-Act-Observe loops, and 
+stops only when it determines sufficient coverage across all research angles.
 
 You type a topic. The agent thinks, searches, observes, and repeats — streaming each search query live to the terminal as it reasons. Once done, it hands off to a second LLM that formats everything into a clean report.
 
@@ -140,4 +141,7 @@ source venv/bin/activate      # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 # 4. Add your Groq API key in .env
+
+# 5. Run the File
+python main.py
 ```
