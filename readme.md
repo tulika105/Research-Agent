@@ -1,6 +1,6 @@
 # 🔍 Research Agent
 
-A ReAct (Reasoning + Action) agent that autonomously searches the web and synthesizes findings into a structured research report — all from the CLI.
+A ReAct (Reasoning + Acting) agent that autonomously searches the web and synthesizes findings into a structured research report — all from the CLI.
 
 You type a topic. The agent thinks, searches, observes, and repeats — streaming each search query live to the terminal as it reasons. Once done, it hands off to a second LLM that formats everything into a clean report.
 
@@ -46,7 +46,7 @@ applications using large language models (LLMs)...
 
 ## How It Works
 
-The agent follows the **ReAct loop** — Reasoning and Action in alternating steps:
+The agent follows the **ReAct loop** — Reasoning and Acting in alternating steps:
 
 ```
 User Input: "Vector Databases"
