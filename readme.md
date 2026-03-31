@@ -9,6 +9,8 @@ stops only when it determines sufficient coverage across all research angles.
 
 You type a topic. The agent thinks, searches, observes, and repeats — streaming each search query live to the terminal as it reasons. Once done, it hands off to a second LLM that formats everything into a clean report.
 
+## System Walkthrough - https://youtu.be/Q5cAnqB865c
+
 <img width="5761" height="6001" alt="Number Processing Pipeline-2026-03-31-062647" src="https://github.com/user-attachments/assets/c8d1acfc-0213-40fd-9e85-b969a7a8b6f2" />
 
 ---
