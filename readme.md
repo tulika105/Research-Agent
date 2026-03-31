@@ -1,4 +1,8 @@
-# 🔍 Research Agent
+# Research Agent
+
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white) 
+![LangGraph](https://img.shields.io/badge/LangGraph-ReAct--Agent-orange?logo=langchain&logoColor=white) 
+![Groq](https://img.shields.io/badge/Llama_3-Groq-f55036?logo=groq&logoColor=white) 
 
 A ReAct (Reasoning + Acting) agent that takes a research topic as input, runs iterative DuckDuckGo searches through Think-Act-Observe loops, and 
 stops only when it determines sufficient coverage across all research angles.
