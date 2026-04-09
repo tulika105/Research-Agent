@@ -5,3 +5,4 @@ langgraph
 duckduckgo-search
 python-dotenv
 groq
+streamlit
