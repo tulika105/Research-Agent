@@ -56,6 +56,6 @@ def format_report(topic: str, raw_research: str) -> str:
 def save_report(topic: str, report: str):
     os.makedirs("examples", exist_ok=True)
     filename = os.path.join("examples", topic.lower().replace(" ", "_")[:40] + "_report.txt")
-    with open(filename, "w") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         f.write(report)
     return filename
