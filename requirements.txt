@@ -6,3 +6,4 @@ ddgs
 duckduckgo-search
 python-dotenv
 groq
+rich

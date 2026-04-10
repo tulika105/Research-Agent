@@ -1,6 +1,8 @@
 from langchain_community.tools import DuckDuckGoSearchResults
 from langchain_core.tools import tool
+from rich.console import Console
 
+console = Console()
 ddg = DuckDuckGoSearchResults(num_results=5, output_format="list")
 
 @tool
