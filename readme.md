@@ -10,6 +10,8 @@ stops only when it determines sufficient coverage across all research angles.
 ### 🌐 Dual-Mode Interface
 This agent is designed for versatility, offering both a **high-performance Developer CLI** for rapid terminal-based research and a **premium, interactive Web UI** built with Gradio. Whether you prefer the raw speed of the command line or the visual clarity of a modern dashboard with real-time reasoning logs, the Autonomous Research Agent provides a professional context-aware experience.
 
+## Live Demo - https://huggingface.co/spaces/Tulika2000/Research-Agent
+
 ## System Walkthrough - https://youtu.be/s4CEPywiakk
 
 <img width="5761" height="6001" alt="Number Processing Pipeline-2026-03-31-062647" src="https://github.com/user-attachments/assets/c8d1acfc-0213-40fd-9e85-b969a7a8b6f2" />
