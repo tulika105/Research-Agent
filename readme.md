@@ -7,7 +7,8 @@
 A ReAct (Reasoning + Acting) agent that takes a research topic as input, runs iterative DuckDuckGo searches through Think-Act-Observe loops, and 
 stops only when it determines sufficient coverage across all research angles.
 
-You type a topic. The agent thinks, searches, observes, and repeats — streaming each search query live to the terminal as it reasons. Once done, it hands off to a second LLM that formats everything into a clean report.
+### 🌐 Dual-Mode Interface
+This agent is designed for versatility, offering both a **high-performance Developer CLI** for rapid terminal-based research and a **premium, interactive Web UI** built with Gradio. Whether you prefer the raw speed of the command line or the visual clarity of a modern dashboard with real-time reasoning logs, the Autonomous Research Agent provides a professional context-aware experience.
 
 ## System Walkthrough - https://youtu.be/jwLssPBL_Yw
 
@@ -92,12 +93,14 @@ Each THINK step asks *"what am I still missing?"* — the agent searches the top
 
 ```
 research-agent/
-├── main.py       # CLI entry point + streaming loop
-├── agent.py      # ReAct agent (LangGraph + Groq)
-├── tools.py      # DuckDuckGo search tool (@tool decorator)
-├── report.py     # Report formatter 
-├── examples/     # Sample reports saved here in txt
-├── requirements.txt  # Python dependencies
+├── app.py           # Premium Gradio Web Interface (Lavender Theme)
+├── main.py          # CLI entry point + streaming loop
+├── agent.py         # ReAct agent (LangGraph + Groq)
+├── tools.py         # DuckDuckGo search tool (@tool decorator)
+├── report_web.py    # Report formatter for Web UI
+├── report.py        # Report formatter for CLI
+├── examples/        # Sample reports saved here in txt
+├── requirements.txt # Python dependencies
 ```
 
 ### Two-Model Design
@@ -131,6 +134,7 @@ Every report follows the same 6-section format:
 | `groq` Python SDK | Direct API call for report formatting |
 | `DuckDuckGoSearchResults` | Web search tool (no API key needed) |
 | `@tool` decorator | LangChain tool definition |
+| `gradio` | Premium Web Interface |
 
 ---
 
@@ -151,5 +155,8 @@ pip install -r requirements.txt
 # 4. Add your Groq API key in .env
 
 # 5. Run the File
+# For Web UI:
+python app.py
+# For CLI:
 python main.py
 ```
