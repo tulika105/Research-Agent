@@ -16,7 +16,7 @@ Do NOT stop after 1 or 2 searches. Each search must use a different, specific qu
 
 def build_agent():
     llm = ChatGroq(
-        model="openai/gpt-oss-20b",
+        model="openai/gpt-oss-120b",
         temperature=0,
         groq_api_key=os.environ["GROQ_API_KEY"]
     )
