@@ -1,6 +1,9 @@
 from groq import Groq
 import os
 from datetime import datetime
+from rich.console import Console
+from rich.panel import Panel
+from io import StringIO
 
 SYSTEM_PROMPT = """You are a professional research report writer.
 Given raw research findings, produce a structured report with the following sections:
@@ -31,19 +34,28 @@ def format_report(topic: str, raw_research: str) -> str:
     report_body = response.choices[0].message.content
 
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M")
-    header = f"""
-{'='*60}
-  RESEARCH REPORT
-  Topic  : {topic}
-  Generated: {timestamp}
-{'='*60}
-"""
-    return header + "\n" + report_body + "\n" + "="*60
+    
+    # Create a Rich Panel for the header and render it to string
+    buffer = StringIO()
+    render_console = Console(file=buffer, force_terminal=True, width=80)
+    
+    header_panel = Panel(
+        f"[bold bright_cyan]📊 RESEARCH REPORT[/bold bright_cyan]\n[bright_black]Topic: {topic}\nGenerated: {timestamp}[/bright_black]",
+        style="blue",
+        expand=False,
+        border_style="bold cyan"
+    )
+    
+    render_console.print(header_panel)
+    header_output = buffer.getvalue()
+    
+    # Combine header and report body
+    return header_output + "\n" + report_body
 
 
 def save_report(topic: str, report: str):
     os.makedirs("examples", exist_ok=True)
     filename = os.path.join("examples", topic.lower().replace(" ", "_")[:40] + "_report.txt")
-    with open(filename, "w") as f:
+    with open(filename, "w", encoding="utf-8") as f:
         f.write(report)
     return filename

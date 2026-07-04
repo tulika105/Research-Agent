@@ -2,6 +2,9 @@ from langgraph.prebuilt import create_react_agent
 from langchain_groq import ChatGroq
 from tools import get_search_tool
 import os
+from rich.console import Console
+
+console = Console()
 
 SYSTEM_PROMPT = """You are a thorough research agent. When given a topic, you MUST search at least 5 times before stopping.
 

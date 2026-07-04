@@ -2,6 +2,10 @@ langchain
 langchain-groq
 langchain-community
 langgraph
+ddgs
 duckduckgo-search
 python-dotenv
 groq
+rich
+gradio
+fpdf2
